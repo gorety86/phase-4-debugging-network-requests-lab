@@ -62,7 +62,9 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: First I POST the content to postman,
+      An internal server error(NameError:uninitialized constant ToyController: :Toys) encountered,
+      I corrected the constant from Toys to Toy, added its validations in the plant model then re-run the code...this time it was successfull. 
 
 - Update the number of likes for a toy
 
@@ -70,4 +72,5 @@ developing your own process.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: There was an error of (no route matches [delete]'/toys/10),
+                    Added a destroy route.
